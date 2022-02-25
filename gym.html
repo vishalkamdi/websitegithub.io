@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/gym.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <style>
+        body {
+            color: black;
+            background-image: url(gym.jpeg);
+            margin: 0px;
+            padding: 0px;
+            background-size: cover;
+
+        }
+
+        .header {
+            display: flex;
+            margin: 0px;
+            padding: 20px;
+
+
+        }
+
+    
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+
+        }
+        .left div{
+            line-height: 19px;
+            font-size: 26px;
+            text-align: center;
+            font-family: cursive;
+
+        }
+
+        .mid {
+             display: block; 
+            margin: 20px ;
+            width: auto;
+            
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+        }
+       .navbar{
+            background-color:black;
+            border-radius: 30px;
+            font-size: 25px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style-type: none;
+            margin: 12px 20px;
+      
+
+        }
+        .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+
+
+    .form-group input { 
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+         border-radius: 8px; 
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 20%;
+        margin: 20px auto;
+    }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="./gym_files/download.jpg" alt="">
+            <div> apna gym</div>
+
+        </div>
+
+        <div class="mid">
+            <ul>
+                <nav class="navbar">
+
+                <li><a href="http://127.0.0.1:5500/gym.html#"></a>Home</li>
+                <li><a href="http://127.0.0.1:5500/gym.html#"></a>About</li>
+                <li><a href="http://127.0.0.1:5500/gym.html#"></a>fitness calculater</li>
+                <li><a href="http://127.0.0.1:5500/gym.html#"></a>contact us</li>
+
+            
+        </nav></ul>
+        </div>
+        <div class="right">
+
+            <button class="btn">call us now</button>
+            <button class="btn">email us</button>
+
+
+        </div>
+
+    </header>
+    <div class="container">
+       <h1> welcome to my gym</h1>
+       <form action="http://127.0.0.1:5500/no%20action.php">
+       <div class="form-group">
+           <input type="text" name="" placeholder="enter your name">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="enter your age">
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="" placeholder="enter your gender">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="enter your locality">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="enter your Email id">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="enter your phone number">
+    </div>
+    <button class="btn"> submit</button>
+       </form>
+    </div>
+
+
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body></html>
